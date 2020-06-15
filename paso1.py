@@ -1,3 +1,2 @@
-print('----------')
-print('python_db')
-print('----------')
+print('2 x ',1,' = ',2*1)
+print('2 x ',2,' = ',2*2)
