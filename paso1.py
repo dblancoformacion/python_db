@@ -1,2 +1,2 @@
-print('2 x ',1,' = ',2*1)
-print('2 x ',2,' = ',2*2)
+for i in range(1,11):
+	print('2 x ',i,' = ',2*i)
