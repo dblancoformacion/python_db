@@ -1,7 +1,7 @@
 # Calculadora de intereses
 
-def cuota(capital,tipo,meses):
-	interes=(1+tipo/100)**(1/12)-1 # 12 por ser tipo de interés anual
+def cuota(capital,tipo,meses,pagos_anuales):
+	interes=(1+tipo/100)**(1/pagos_anuales)-1 # 12 por ser tipo de interés anual
 	interes*=100
 	return round(
 		capital*interes
@@ -12,10 +12,12 @@ def cuota(capital,tipo,meses):
 		,2)
 	
 
-capital=1000
-meses=12
-tipo=10
+capital=5000
+meses=3*12
+tipo=4
+pagos_anuales=12
 
-pago=cuota(capital,tipo,meses);
-print('Cuota mensual : ',pago)
+pago=cuota(capital,tipo,meses,pagos_anuales)
+print('Cuota: ',pago)
 print('Intereses abonados en total: ',round(pago*meses-capital,2))
+
