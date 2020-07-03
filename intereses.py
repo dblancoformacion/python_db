@@ -13,8 +13,8 @@ def cuota(capital,tipo,meses,pagos_anuales):
 	
 
 capital=5000
-meses=3*12
-tipo=4
+meses=12
+tipo=5
 pagos_anuales=12
 
 pago=cuota(capital,tipo,meses,pagos_anuales)
